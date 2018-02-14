@@ -1,6 +1,6 @@
 var Load = {
 
-	preload:function() {		
+	preload:function() {
 		game.load.json('json', 'structure_cuisine.json');
 		game.load.spritesheet('BoutonJouer', 'assets/BoutonJouerSprite.png', 381, 108);
 		game.load.spritesheet('BoutonRegle', 'assets/BoutonRegleSprite.png', 381, 108);
@@ -20,7 +20,7 @@ var Load = {
 		game.load.image('Bois', 'assets/Bois.png');
 		game.load.image('RecetteEcran', 'assets/RecetteEcran.png');
 		game.load.image('EcranPerdu', 'assets/EcranPerdu.png');
-		game.load.image('EcranGagné', 'assets/EcranGagné.png');
+		game.load.image('EcranGagné', 'assets/EcranGagne.png');
 		game.load.spritesheet('Bol', 'assets/Bol.png', 84, 54);
 		game.load.spritesheet('Cacao', 'assets/Cacao.png', 69, 69);
 		game.load.spritesheet('Farine', 'assets/Farine.png', 69, 69);
@@ -37,9 +37,8 @@ var Load = {
 	},
 
 	create:function(){
-		console.log('create');
-		var phaserJSON = game.cache.getJSON('json');
+		phaserJSON = game.cache.getJSON("json");
 		game.state.start('Menu');
 	},
-	
+
 }
