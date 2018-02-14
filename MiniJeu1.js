@@ -1,0 +1,3 @@
+var MiniJeu1 = {
+  
+}

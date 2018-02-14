@@ -1,0 +1,92 @@
+{"objets":{
+	"chef" : {
+		"x" : 0,
+		"y" : 0,
+		"etat" : "ChefContent"
+	},
+	"feu" : {
+		"x" : 0,
+		"y" : 0,
+		"etat" : "feuEteint"
+	},
+
+	"casserole" : {
+		"x" : 0,
+		"y" : 0,
+		"etat" : "casseroleVide"
+	},
+
+	"verreDoseur" : {
+		"x" : 0,
+		"y" : 0,
+		"etat" : "verreVide"
+	},
+
+	"louche" : {
+		"x" : 0,
+		"y" : 0,
+		"etat" : "loucheVide"
+	},
+
+	"bol" : {
+		"x" : 0,
+		"y" : 0,
+		"etat" : "bolVide"
+	},
+
+	"moule" : {
+		"x" : 0,
+		"y" : 0,
+		"etat" : "mouleVide",
+		"pret" : false
+	},
+
+	"oeuf" : {
+		"x" : 0,
+		"y" : 0,
+		"etat" : "oeufs2"
+	},
+
+	"bois" : {
+		"x" : 0,
+		"y" : 0,
+		"visible" : true
+	}
+},
+"dicoFrames":{
+	"chefTriste" : 0,
+	"chefPasContent" : 1,
+	"chefContent" : 2,
+	"chefTresContent" : 3,
+
+	"feuEteint" : 0,
+	"feuChaud" : 1,
+	"feuTresChaud" : 2,
+
+	"casseroleVide" : 0,
+	"casseroleLait" : 0,
+	"casseroleChaude" : 0,
+
+	"verreVide" : 0,
+	"verreFarine" : 1,
+	"verreSucre" : 2,
+
+	"loucheVide" : 0,
+	"locheFarine" : 1,
+	"loucheSucre" : 2,
+	"loucheSucreVanille" : 2,
+	"loucheQuatreEpices": 3,
+	"loucheMiel" : 3,
+	"loucheCacao" : 4,
+
+	"bolVide" : 0,
+	"bolPlein" : 1,
+
+	"mouleVide" : 0,
+	"moulePlein" : 1,
+	"mouleCuit" : 2,
+
+	"oeufs2" : 0,
+	"oeufs1" : 1,
+	"oeufs0" : 2
+}}
