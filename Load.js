@@ -17,15 +17,16 @@ var Load = {
 		game.load.image('AideBackground', 'assets/AideBackground.png');
 		game.load.image('RocherDroit', 'assets/RocherDroit.png');
 		game.load.image('RocherGauche', 'assets/RocherGauche.png');
-		game.load.image('Bois', 'assets/Bois.png');
+		game.load.image('BoisGrand', 'assets/BoisGrand.png');
 		game.load.image('RecetteEcran', 'assets/RecetteEcran.png');
 		game.load.image('EcranPerdu', 'assets/EcranPerdu.png');
-		game.load.image('EcranGagné', 'assets/EcranGagne.png');
+		game.load.image('EcranGagné', 'assets/EcranGagné.png');
 		game.load.spritesheet('Bol', 'assets/Bol.png', 84, 54);
 		game.load.spritesheet('Cacao', 'assets/Cacao.png', 69, 69);
 		game.load.spritesheet('Farine', 'assets/Farine.png', 69, 69);
 		game.load.spritesheet('Lait', 'assets/Lait.png', 69, 69);
 		game.load.spritesheet('Miel', 'assets/Miel.png', 69, 69);
+		game.load.spritesheet('Levure', 'assets/Levure.png', 69, 69);
 		game.load.spritesheet('QuatreEpices', 'assets/QuatreEpices.png', 69, 69);
 		game.load.spritesheet('SucreEnPoudre', 'assets/SucreEnPoudre.png', 69, 69);
 		game.load.spritesheet('SucreVanille', 'assets/SucreVanille.png', 69, 69);
@@ -33,11 +34,12 @@ var Load = {
 		game.load.spritesheet('Louche', 'assets/Louche.png', 31, 61);
 		game.load.spritesheet('Moule', 'assets/Moule.png', 102, 56);
 		game.load.spritesheet('Oeuf', 'assets/Oeuf.png', 80, 39);
-		game.load.spritesheet('Verre', 'assets/Verre.png', 32, 48);
+		game.load.spritesheet('VerreDoseur', 'assets/Verre.png', 32, 48);
 	},
 
 	create:function(){
-		phaserJSON = game.cache.getJSON("json");
+		console.log('Load');
+		var phaserJSON = game.cache.getJSON('json');
 		game.state.start('Menu');
 	},
 

@@ -1,0 +1,179 @@
+{
+  "louche": {
+    "vide": {
+      "farine": {
+        "plein": "function(){
+          phaserJSON.louche.etat = 'farine';
+          phaserJSON.louche.sprite.frame = phaserJSON.louche.etats['farine'];
+          phaserJSON.farine.etat = 'vide';
+          phaserJSON.farine.sprite.frame = phaserJSON.farine.etats['vide'];
+      }
+      "
+    }
+  },
+  "farine": {
+    "doseur": {
+      "vide": "function(){
+      phaserJSON.louche.etat = 'vide';
+      phaserJSON.louche.sprite.frame = phaserJSON.louche.etats['vide'];
+      phaserJSON.doseur.etat = 'farine';
+      phaserJSON.doseur.sprite.frame = phaserJSON.doseur.etats['farine'];
+    }
+    "
+  }
+},
+"sucre": {
+  "doseur": {
+    "vide": "function(){
+    phaserJSON.louche.etat = 'vide';
+    phaserJSON.louche.sprite.frame = phaserJSON.louche.etats['vide'];
+    phaserJSON.doseur.etat = 'sucre';
+    phaserJSON.doseur.sprite.frame = phaserJSON.doseur.etats['sucre'];
+  }
+  "
+}
+},
+"sucreVanille": {
+  "bol": {
+    "farinesucrelevure": "function(){
+    phaserJSON.louche.etat = 'vide';
+    phaserJSON.louche.sprite.frame = phaserJSON.louche.etats['vide'];
+    phaserJSON.bol.etat = 'farinesucrelevurevanille';
+    phaserJSON.bol.sprite.frame = phaserJSON.bol.etats['farinesucrelevurevanille'];
+  }
+  "
+}
+},
+"quatreEpices": {
+  "bol": {
+    "farinesucrelevurevanille": "function(){
+    phaserJSON.louche.etat = 'vide';
+    phaserJSON.louche.sprite.frame = phaserJSON.louche.etats['vide'];
+    phaserJSON.bol.etat = 'farinesucrelevurevanille4';
+    phaserJSON.bol.sprite.frame = phaserJSON.bol.etats['farinesucrelevurevanille4'];
+  }
+  "
+}
+},
+"miel": {
+  "doseur": {
+    "vide": "function(){
+    phaserJSON.louche.etat = 'vide';
+    phaserJSON.louche.sprite.frame = phaserJSON.louche.etats['vide'];
+    phaserJSON.doseur.etat = 'miel';
+    phaserJSON.doseur.sprite.frame = phaserJSON.doseur.etats['miel'];
+  }
+  "
+}
+},
+"cacao": {
+  "bol": {
+    "farinesucrelevurevanille4": "function(){
+    phaserJSON.louche.etat = 'vide';
+    phaserJSON.louche.sprite.frame = phaserJSON.louche.etats['vide'];
+    phaserJSON.bol.etat = 'farinesucrelevurevanille4cacao';
+    phaserJSON.bol.sprite.frame = phaserJSON.bol.etats['farinesucrelevurevanille4cacao'];
+  }
+  "
+}
+}
+},
+
+"doseur": {
+  "farine": {
+    "bol": {
+      "vide": "function(){
+      phaserJSON.doseur.etat = 'vide';
+      phaserJSON.doseur.sprite.frame = phaserJSON.doseur.etats['vide'];
+      phaserJSON.bol.etat = 'farine';
+      phaserJSON.bol.sprite.frame = phaserJSON.bol.etats['farine'];
+    }
+    "
+  }
+},
+"sucre": {
+  "bol": {
+    "farine": "function(){
+    phaserJSON.doseur.etat = 'vide';
+    phaserJSON.doseur.sprite.frame = phaserJSON.doseur.etats['vide'];
+    phaserJSON.bol.etat = 'farinesucre';
+    phaserJSON.bol.sprite.frame = phaserJSON.bol.etats['farinesucre'];
+  }
+  "
+}
+},
+
+"lait": {
+  "casserole": {
+    "vide": "function(){
+    phaserJSON.doseur.etat = 'vide';
+    phaserJSON.doseur.sprite.frame = phaserJSON.doseur.etats['vide'];
+    phaserJSON.casserole.etat = 'lait';
+    phaserJSON.casserole.sprite.frame = phaserJSON.casserole.etats['lait'];
+  }
+  "
+}
+},
+"miel": {
+  "bol": {
+    "farinesucrelevurevanille4cacaooeuf2lait": "function(){
+    phaserJSON.doseur.etat = 'vide';
+    phaserJSON.doseur.sprite.frame = phaserJSON.doseur.etats['vide'];
+    phaserJSON.bol.etat = 'farinesucrelevurevanille4cacaooeuf2laitmiel';
+    phaserJSON.bol.sprite.frame = phaserJSON.bol.etats['farinesucrelevurevanille4cacaooeuf2laitmiel'];
+  }
+  "
+}
+}
+},
+"casserole": {
+  "chaude": {
+    "bol": {
+      "farinesucrelevurevanille4cacaooeuf2": "function(){
+      phaserJSON.casserole.etat = 'vide';
+      phaserJSON.casserole.sprite.frame = phaserJSON.casserole.etats['vide'];
+      phaserJSON.bol.etat = 'farinesucrelevurevanille4cacaooeuf2lait';
+      phaserJSON.bol.sprite.frame = phaserJSON.bol.etats['farinesucrelevurevanille4cacaooeuf2lait'];
+    }
+    "
+  }
+}
+},
+"oeuf": {
+  "deux": {
+    "bol": {
+      "farinesucrelevurevanille4cacao": "function(){
+      phaserJSON.oeuf.etat = 'un';
+      phaserJSON.oeuf.sprite.frame = phaserJSON.oeuf.etats['un'];
+      phaserJSON.bol.etat = 'farinesucrelevurevanille4cacaooeuf';
+      phaserJSON.bol.sprite.frame = phaserJSON.bol.etats['farinesucrelevurevanille4cacaooeuf'];
+    }
+    "
+  }
+},
+"un": {
+	"bol": {
+		"farinesucrelevurevanille4cacaooeuf": "function(){
+    phaserJSON.oeuf.etat = 'vide';
+    phaserJSON.oeuf.sprite.frame = phaserJSON.oeuf.etats['vide'];
+    phaserJSON.bol.etat = 'farinesucrelevurevanille4cacaooeuf2';
+    phaserJSON.bol.sprite.frame = phaserJSON.bol.etats['farinesucrelevurevanille4cacaooeuf2'];
+	}
+	"
+}
+}
+},
+"moule": {
+  "plein": {
+    "four": {
+      "tresChaud": "function(){
+      moule.etat = dansFour;
+      phaserJSON.moule.etat = 'dansFour';
+      phaserJSON.moule.sprite.frame = phaserJSON.moule.etats['dansFour'];
+      phaserJSON.four.etat = 'moule';
+      phaserJSON.four.sprite.frame = phaserJSON.four.etats['moule'];
+    }
+    "
+  }
+}
+},

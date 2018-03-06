@@ -1,92 +1,577 @@
-{"objets":{
-	"chef" : {
-		"x" : 0,
-		"y" : 0,
-		"etat" : "ChefContent"
-	},
-	"feu" : {
-		"x" : 0,
-		"y" : 0,
-		"etat" : "feuEteint"
-	},
+{
+  "objets": {
+    "chef": {
+      "x": 0,
+      "y": 0,
+      "width": 100,
+      "length": 100,
+      "imgPath": "assets/.png",
+      "etat": "content",
+      "etats": {
+        "triste": 0,
+        "pasContent": 1,
+        "content": 2,
+        "tresContent": 3
+      },
+      "draggable": false
+    },
 
-	"casserole" : {
-		"x" : 0,
-		"y" : 0,
-		"etat" : "casseroleVide"
-	},
+    "table": {
+      "x": 20,
+      "y": 100,
+      "width": 846,
+      "length": 599,
+      "imgPath": "assets/TableSprite.png",
+      "etat": "table0",
+      "etats": {
+        "table0": 0
+      },
+      "draggable": false
+    },
 
-	"verreDoseur" : {
-		"x" : 0,
-		"y" : 0,
-		"etat" : "verreVide"
-	},
+    "four": {
+      "x": 900,
+      "y": 300,
+      "width": 445,
+      "length": 307,
+      "imgPath": "assets/FourSprite.png",
+      "etat": "eteint",
+      "etats": {
+        "eteint": 0,
+        "chaud": 1,
+        "tresChaud": 2,
+        "select": 3,
+        "moule":3
+      },
+      "draggable": false
+    },
 
-	"louche" : {
-		"x" : 0,
-		"y" : 0,
-		"etat" : "loucheVide"
-	},
+    "bois": {
+      "x": 0,
+      "y": 0,
+      "width": 106,
+      "length": 81,
+      "imgPath": "assets/Bois.png",
+      "etat": "bois0",
+      "etats": {
+        "bois0": 0
+      },
+      "draggable": false
+    },
 
-	"bol" : {
-		"x" : 0,
-		"y" : 0,
-		"etat" : "bolVide"
-	},
+    "casserole": {
+      "x": 0,
+      "y": 0,
+      "width": 168,
+      "length": 64,
+      "imgPath": "assets/Casserole.png",
+      "etat": "vide",
+      "etats": {
+        "vide": 0,
+        "lait": 1,
+        "chaude": 1
+      },
+      "draggable": true
+    },
 
-	"moule" : {
-		"x" : 0,
-		"y" : 0,
-		"etat" : "mouleVide",
-		"pret" : false
-	},
+    "doseur": {
+      "x": 600,
+      "y": 200,
+      "width": 32,
+      "length": 48,
+      "imgPath": "assets/Verre.png",
+      "etat": "vide",
+      "etats": {
+        "vide": 0,
+        "farine": 1,
+        "sucre": 2,
+        "lait":1,
+				"miel":1
+      },
+      "draggable": true
+    },
 
-	"oeuf" : {
-		"x" : 0,
-		"y" : 0,
-		"etat" : "oeufs2"
-	},
+    "louche": {
+      "x": 0,
+      "y": 0,
+      "width": 31,
+      "length": 61,
+      "imgPath": "assets/Louche.png",
+      "etat": "vide",
+      "etats": {
+        "vide": 0,
+        "farine": 1,
+        "sucre": 2,
+        "sucreVanille": 2,
+        "quatreEpices": 3,
+        "miel": 3,
+        "cacao": 4
+      },
+      "draggable": true
+    },
 
-	"bois" : {
-		"x" : 0,
-		"y" : 0,
-		"visible" : true
-	}
-},
-"dicoFrames":{
-	"chefTriste" : 0,
-	"chefPasContent" : 1,
-	"chefContent" : 2,
-	"chefTresContent" : 3,
+    "bol": {
+      "x": 0,
+      "y": 0,
+      "width": 84,
+      "length": 54,
+      "imgPath": "assets/Bol.png",
+      "etat": "vide",
+      "etats": {
+        "vide": 0,
+        "farine": 1,
+        "farinesucre": 1,
+        "farinesucrelevure": 1,
+        "farinesucrelevurevanille": 1,
+        "farinesucrelevurevanille4": 1,
+        "farinesucrelevurevanille4cacao": 1,
+        "farinesucrelevurevanille4cacaooeuf": 1,
+        "farinesucrelevurevanille4cacaooeuf2": 1,
+        "farinesucrelevurevanille4cacaooeuf2lait": 1,
+        "farinesucrelevurevanille4cacaooeuf2laitmiel": 1
+      },
+      "draggable": true
+    },
 
-	"feuEteint" : 0,
-	"feuChaud" : 1,
-	"feuTresChaud" : 2,
+    "moule": {
+      "x": 0,
+      "y": 0,
+      "width": 102,
+      "length": 56,
+      "imgPath": "assets/Moule.png",
+      "etat": "vide",
+      "etats": {
+        "vide": 0,
+        "plein": 1,
+        "cuit": 2,
+        "dansFour":1
+      },
+      "pret": false,
+      "draggable": true
+    },
 
-	"casseroleVide" : 0,
-	"casseroleLait" : 0,
-	"casseroleChaude" : 0,
+    "sucre": {
+      "x": 0,
+      "y": 0,
+      "width": 69,
+      "length": 69,
+      "imgPath": "assets/SucreEnPoudre.png",
+      "etat": "plein",
+      "etats": {
+        "plein": 0,
+        "vide": 1
+      },
+      "draggable": false
+    },
 
-	"verreVide" : 0,
-	"verreFarine" : 1,
-	"verreSucre" : 2,
+    "farine": {
+      "x": 370,
+      "y": 110,
+      "width": 69,
+      "length": 69,
+      "imgPath": "assets/Farine.png",
+      "etat": "plein",
+      "etats": {
+        "plein": 0,
+        "vide": 1
+      },
+      "draggable": false
+    },
 
-	"loucheVide" : 0,
-	"locheFarine" : 1,
-	"loucheSucre" : 2,
-	"loucheSucreVanille" : 2,
-	"loucheQuatreEpices": 3,
-	"loucheMiel" : 3,
-	"loucheCacao" : 4,
+    "levure": {
+      "x": 0,
+      "y": 0,
+      "width": 69,
+      "length": 69,
+      "imgPath": "assets/Levure.png",
+      "etat": "plein",
+      "etats": {
+        "plein": 0,
+        "vide": 1
+      },
+      "draggable": false
+    },
 
-	"bolVide" : 0,
-	"bolPlein" : 1,
+    "sucreVanille": {
+      "x": 0,
+      "y": 0,
+      "width": 69,
+      "length": 69,
+      "imgPath": "assets/SucreVanille.png",
+      "etat": "plein",
+      "etats": {
+        "plein": 0,
+        "vide": 1
+      },
+      "draggable": false
+    },
 
-	"mouleVide" : 0,
-	"moulePlein" : 1,
-	"mouleCuit" : 2,
+    "quatreEpices": {
+      "x": 0,
+      "y": 0,
+      "width": 69,
+      "length": 69,
+      "imgPath": "assets/QuatreEpices.png",
+      "etat": "plein",
+      "etats": {
+        "plein": 0,
+        "vide": 1
+      },
+      "draggable": false
+    },
 
-	"oeufs2" : 0,
-	"oeufs1" : 1,
-	"oeufs0" : 2
-}}
+    "cacao": {
+      "x": 290,
+      "y": 87,
+      "width": 69,
+      "length": 69,
+      "imgPath": "assets/Cacao.png",
+      "etat": "plein",
+      "etats": {
+        "plein": 0,
+        "vide": 1
+      },
+      "draggable": false
+    },
+
+    "lait": {
+      "x": 460,
+      "y": 90,
+      "width": 69,
+      "length": 69,
+      "imgPath": "assets/Lait.png",
+      "etat": "plein",
+      "etats": {
+        "plein": 0,
+        "vide": 1
+      },
+      "draggable": false
+    },
+
+    "miel": {
+      "x": 0,
+      "y": 0,
+      "width": 69,
+      "length": 69,
+      "imgPath": "assets/Miel.png",
+      "etat": "plein",
+      "etats": {
+        "plein": 0,
+        "vide": 1
+      },
+      "draggable": false
+    },
+
+    "oeuf": {
+      "x": 400,
+      "y": 300,
+      "width": 80,
+      "length": 39,
+      "imgPath": "assets/Oeuf.png",
+      "etat": "deux",
+      "etats": {
+        "deux": 0,
+        "un": 1,
+        "vide": 2
+      },
+      "draggable": true
+    }
+  },
+
+  "minijeu2": {
+    "Table": {
+      "x": 20,
+      "y": 100,
+      "width": 846,
+      "length": 599,
+      "scale" : 1.25,
+      "imgPath": "assets/TableSprite.png",
+      "etat": "table0",
+      "etats": {
+        "table0": 0
+      },
+      "draggable": false
+    },
+
+    "Casserole": {
+      "x": 800,
+      "y": 220,
+      "width": 168,
+      "length": 64,
+      "scale" : 1,
+      "imgPath": "assets/Casserole.png",
+      "etat": "vide",
+      "etats": {
+        "vide": 0,
+        "lait": 0,
+        "chaude": 0
+      },
+      "draggable": true
+    },
+
+    "Doseur": {
+      "x": 790,
+      "y": 160,
+      "width": 32,
+      "length": 48,
+      "scale" : 1.5,
+      "imgPath": "assets/Verre.png",
+      "etat": "vide",
+      "etats": {
+        "vide": 0,
+        "farine": 1,
+        "sucre": 2,
+				"lait":1,
+				"miel":1
+      },
+      "draggable": true
+    },
+
+    "Louche": {
+      "x": 850,
+      "y": 290,
+      "width": 31,
+      "length": 61,
+      "scale" : 1.5,
+      "imgPath": "assets/Louche.png",
+      "etat": "vide",
+      "etats": {
+        "vide": 0,
+        "farine": 1,
+        "sucre": 2,
+        "sucreVanille": 2,
+        "quatreEpices": 3,
+        "miel": 3,
+        "cacao": 4
+      },
+      "draggable": true
+    },
+
+    "Bol": {
+      "x": 570,
+      "y": 205,
+      "width": 84,
+      "length": 54,
+      "scale" : 1,
+      "imgPath": "assets/Bol.png",
+      "etat": "vide",
+      "etats": {
+        "vide": 0,
+        "farine": 1,
+        "farinesucre": 1,
+        "farinesucrelevure": 1,
+        "farinesucrelevurevanille": 1,
+        "farinesucrelevurevanille4": 1,
+        "farinesucrelevurevanille4cacao": 1,
+        "farinesucrelevurevanille4cacaooeuf": 1,
+        "farinesucrelevurevanille4cacaooeuf2": 1,
+        "farinesucrelevurevanille4cacaooeuf2lait": 1,
+        "farinesucrelevurevanille4cacaooeuf2laitmiel": 1
+      },
+      "draggable": true
+    },
+
+    "Moule": {
+      "x": 650,
+      "y": 270,
+      "width": 102,
+      "length": 56,
+      "scale" : 1,
+      "imgPath": "assets/Moule.png",
+      "etat": "vide",
+      "etats": {
+        "vide": 0,
+        "plein": 1,
+        "cuit": 2
+      },
+      "pret": false,
+      "draggable": true
+    },
+
+    "SucreEnPoudre": {
+      "x": 300,
+      "y": 95,
+      "width": 69,
+      "length": 69,
+      "scale" : 1,
+      "imgPath": "assets/SucreEnPoudre.png",
+      "etat": "plein",
+      "etats": {
+        "plein": 0,
+        "vide": 1
+      },
+      "draggable": false
+    },
+
+    "Farine": {
+      "x": 370,
+      "y": 92,
+      "width": 69,
+      "length": 69,
+      "scale" : 1,
+      "imgPath": "assets/Farine.png",
+      "etat": "plein",
+      "etats": {
+        "plein": 0,
+        "vide": 1
+      },
+      "draggable": false
+    },
+
+    "Levure": {
+      "x": 440,
+      "y": 87,
+      "width": 69,
+      "length": 69,
+      "scale" : 1,
+      "imgPath": "assets/Levure.png",
+      "etat": "plein",
+      "etats": {
+        "plein": 0,
+        "vide": 1
+      },
+      "draggable": false
+    },
+
+    "SucreVanille": {
+      "x": 510,
+      "y": 83,
+      "width": 69,
+      "length": 69,
+      "scale" : 1,
+      "imgPath": "assets/SucreVanille.png",
+      "etat": "plein",
+      "etats": {
+        "plein": 0,
+        "vide": 1
+      },
+      "draggable": false
+    },
+
+    "QuatreEpices": {
+      "x": 580,
+      "y": 79,
+      "width": 69,
+      "length": 69,
+      "scale" : 1,
+      "imgPath": "assets/QuatreEpices.png",
+      "etat": "plein",
+      "etats": {
+        "plein": 0,
+        "vide": 1
+      },
+      "draggable": false
+    },
+
+    "Cacao": {
+      "x": 650,
+      "y": 100,
+      "width": 69,
+      "length": 69,
+      "scale" : 1,
+      "imgPath": "assets/Cacao.png",
+      "etat": "plein",
+      "etats": {
+        "plein": 0,
+        "vide": 1
+      },
+      "draggable": false
+    },
+
+    "Lait": {
+      "x": 320,
+      "y": 170,
+      "width": 69,
+      "length": 69,
+      "scale" : 1,
+      "imgPath": "assets/Lait.png",
+      "etat": "plein",
+      "etats": {
+        "plein": 0,
+        "vide": 1
+      },
+      "draggable": false
+    },
+
+    "Miel": {
+      "x": 395,
+      "y": 160,
+      "width": 69,
+      "length": 69,
+      "scale" : 1,
+      "imgPath": "assets/Miel.png",
+      "etat": "plein",
+      "etats": {
+        "plein": 0,
+        "vide": 1
+      },
+      "draggable": false
+    },
+
+    "Oeuf": {
+      "x": 510,
+      "y": 152,
+      "width": 80,
+      "length": 39,
+      "scale" : 1,
+      "imgPath": "assets/Oeuf.png",
+      "etat": "deux",
+      "etats": {
+        "deux": 0,
+        "un": 1,
+        "vide": 2
+      },
+      "draggable": true
+    }
+  },
+  "minijeu1": {
+    "Four": {
+      "x": 450,
+      "y": 120,
+      "width": 728,
+      "length": 491,
+      "scale": 1.6,
+      "imgPath": "assets/FourSprite.png",
+      "etat": "eteint",
+      "etats": {
+        "eteint": 0,
+        "chaud": 1,
+        "tresChaud": 2,
+        "select": 3,
+        "moule":3
+      },
+      "draggable": false
+    },
+
+		"BoisGrand" : {
+        "x" : 100,
+        "y" : 400,
+        "width" : 106,
+        "length" : 81,
+        "scale" : 0.7,
+        "imgPath" : "assets/BoisGrand.png",
+        "etat" : "bois0",
+        "etats" : {
+            "bois0" : 0
+        },
+        "draggable" : false
+    },
+
+    "Moule": {
+      "x": 690,
+      "y": 400,
+      "width": 102,
+      "length": 56,
+      "scale": 1.6,
+      "imgPath": "assets/Moule.png",
+      "etat": "vide",
+      "etats": {
+        "vide": 0,
+        "plein": 1,
+        "cuit": 2
+      },
+      "pret": false,
+      "draggable": true
+    }
+  }
+}
