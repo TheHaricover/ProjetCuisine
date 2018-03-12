@@ -1,9 +1,7 @@
 var Load = {
 
 	preload:function() {
-		//console.log("load du JSON nommé 'json' dans Load.js:preload() :");
 		game.load.json('json', 'structure_cuisine.json');
-		//console.log("Fin du 'game.load.json':");
 		game.load.spritesheet('BoutonJouer', 'assets/BoutonJouerSprite.png', 381, 108);
 		game.load.spritesheet('BoutonRegle', 'assets/BoutonRegleSprite.png', 381, 108);
 		game.load.spritesheet('BoutonQuitter', 'assets/BoutonQuitterSprite.png', 381, 108);
@@ -44,10 +42,7 @@ var Load = {
 	},
 
 	create:function(){
-		//console.log('Load');
-		//console.log("assignation de 'json' à phaserJSON dans create (toujours dans Load.js) :");
 		phaserJSON = game.cache.getJSON('json');
-		//console.log('Fin du game.cache.getJSON :');
 		game.state.start('Menu');
 	},
 

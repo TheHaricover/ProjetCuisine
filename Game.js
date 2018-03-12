@@ -15,7 +15,6 @@ var Game = {
 		game.add.sprite(290, 87, 'Cacao');
 		game.add.sprite(400, 300, 'Oeuf');
 		game.add.sprite(600, 200, 'Doseur');
-		//var phaserJSON = game.cache.getJSON('json');
 		button.anchor.setTo(0.5, 0.5);
 		//for (var i=0; i<)
 
