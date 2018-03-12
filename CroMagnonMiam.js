@@ -10,5 +10,6 @@ game.state.add('MiniJeu1', MiniJeu1);
 game.state.add('MiniJeu2', MiniJeu2);
 
 var button;
+var phaserJSON;
 
 game.state.start('Load');

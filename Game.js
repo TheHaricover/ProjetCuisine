@@ -14,33 +14,33 @@ var Game = {
 		game.add.sprite(460, 90, 'Lait');
 		game.add.sprite(290, 87, 'Cacao');
 		game.add.sprite(400, 300, 'Oeuf');
-		game.add.sprite(600, 200, 'Verre');
-		
+		game.add.sprite(600, 200, 'Doseur');
+		//var phaserJSON = game.cache.getJSON('json');
 		button.anchor.setTo(0.5, 0.5);
 		//for (var i=0; i<)
 
 	},
-	
+
 	MiniJeu1:function(){
 		game.state.start('MiniJeu1');
 	},
-	
+
 	MiniJeu2:function(){
 		game.state.start('MiniJeu2');
 	},
-	
+
 	aide:function(){
 		game.state.start('Aide2');
 	},
-	
+
 	menu:function(){
 		game.state.start('Menu');
 	},
-	
+
 	exit:function(){
 		game.state.start('Exit');
 	},
-	
+
 	recette:function(){
 		game.state.start('Recette');
 	},

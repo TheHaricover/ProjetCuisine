@@ -5,7 +5,7 @@
       "y": 0,
       "width": 100,
       "length": 100,
-      "imgPath": "assets/.png",
+      "imgPath": "assets/homme.png",
       "etat": "content",
       "etats": {
         "triste": 0,

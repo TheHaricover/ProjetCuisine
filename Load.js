@@ -1,7 +1,9 @@
 var Load = {
 
 	preload:function() {
+		//console.log("load du JSON nommé 'json' dans Load.js:preload() :");
 		game.load.json('json', 'structure_cuisine.json');
+		//console.log("Fin du 'game.load.json':");
 		game.load.spritesheet('BoutonJouer', 'assets/BoutonJouerSprite.png', 381, 108);
 		game.load.spritesheet('BoutonRegle', 'assets/BoutonRegleSprite.png', 381, 108);
 		game.load.spritesheet('BoutonQuitter', 'assets/BoutonQuitterSprite.png', 381, 108);
@@ -20,7 +22,7 @@ var Load = {
 		game.load.image('BoisGrand', 'assets/BoisGrand.png');
 		game.load.image('RecetteEcran', 'assets/RecetteEcran.png');
 		game.load.image('EcranPerdu', 'assets/EcranPerdu.png');
-		game.load.image('EcranGagné', 'assets/EcranGagné.png');
+		game.load.image('EcranGagné', 'assets/EcranGagne.png');
 		game.load.spritesheet('Bol', 'assets/Bol.png', 84, 54);
 		game.load.spritesheet('Cacao', 'assets/Cacao.png', 69, 69);
 		game.load.spritesheet('Farine', 'assets/Farine.png', 69, 69);
@@ -34,12 +36,18 @@ var Load = {
 		game.load.spritesheet('Louche', 'assets/Louche.png', 31, 61);
 		game.load.spritesheet('Moule', 'assets/Moule.png', 102, 56);
 		game.load.spritesheet('Oeuf', 'assets/Oeuf.png', 80, 39);
-		game.load.spritesheet('VerreDoseur', 'assets/Verre.png', 32, 48);
+		game.load.spritesheet('Doseur', 'assets/Verre.png', 32, 48);
+		game.load.spritesheet('homme', 'assets/homme.png', 478, 403);
+
+		// Cette assignation ne fonctionne pas. Phaser.Cache.getJSON: Invalid key: "json"
+		//var phaserJSON = game.cache.getJSON('json');
 	},
 
 	create:function(){
-		console.log('Load');
-		var phaserJSON = game.cache.getJSON('json');
+		//console.log('Load');
+		//console.log("assignation de 'json' à phaserJSON dans create (toujours dans Load.js) :");
+		phaserJSON = game.cache.getJSON('json');
+		//console.log('Fin du game.cache.getJSON :');
 		game.state.start('Menu');
 	},
 
